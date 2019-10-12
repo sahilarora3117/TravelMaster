@@ -1,6 +1,6 @@
-Chennai
-Chennai
-2500
-True
+
+Kolkata
+3500
+False
 False
 False
