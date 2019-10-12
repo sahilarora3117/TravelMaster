@@ -240,7 +240,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_equals1">
-                <property name="label" translatable="yes">Register</property>
+                <property name="label" translatable="yes">Submit</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>

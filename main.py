@@ -30,6 +30,16 @@ class Handler:
         else:
             print ("Nola")
             label_result.set_text("Bad Credentials.")
+    
+    def but_reg(self,button):
+        label_result = builder.get_object("reg")
+        UserName = builder.get_object("entry_number1").get_text()
+        Password = builder.get_object("entry_number2").get_text()
+        with sqlite3.connect("Assets/login.db") as db:
+            cursor = db.cursor()
+        cursor.execute('INSERT INTO user(username,password) VALUES(?,?)' ,(UserName, Password))
+        db.commit ()
+        exit()
 
 
 
